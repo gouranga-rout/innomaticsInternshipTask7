@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0rem;
+}
+
+.wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 2rem .5rem;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  box-shadow: 0 5px 15px crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+/*
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+}
+  */      
+.container {
+/*  position: relative;
+  z-index: 1;*/
+  padding: 1rem;
+  text-align: center;
+  max-height: 100vh;
+}
+
+.container .platform {
+  margin: .3rem auto;
+  padding-bottom: 2rem;
+  padding: .5rem;
+  border-bottom: .05rem solid crimson;
+}
+
+.platform img {
+  width: 100%;
+}
+
+.container .project-name {
+  margin: .5rem;
+  padding-bottom: 2rem;
+}
+
+.project-name h2 {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.project-name p {
+  font-size: .8rem;
+  color: crimson;
+}
+
+.project-name p a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.project-name p a:hover {
+  background-color: crimson;
+  color: #fff;
+  padding: .03rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons i {
+  color: crimson;
+  font-size: 1.5rem;
+}
+
+.social-icons i:hover {
+  color: green;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;;
+}
+
+.search-container input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  font-size: 1rem;
+  border-radius: .3rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.search-container button:hover {
+  background-color: green;
+}
+
+
+#result {
+  margin-top: 20px;
+  color: #333;
+}
+
+
+.location {
+  color: crimson;
+  margin-bottom: 1rem;
+}
+
+.date {
+  color: green;
+  font-size: 1rem;
+}
+
+.environment {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.current-temp {
+  font-size: 1.7rem;
+  color: crimson;
+}
+
+.environment .weather,
+.environment .desc {
+  font-size: 1rem;
+  color: #fff;
+  margin: 5px 2px;
+  background-color: blue;
+  padding: .09rem;
+  border-radius: 3px;
+}
+
+
+.temp-container {
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.temp-container .min-temp,
+.temp-container .max-temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.title {
+  color: crimson; 
+}
+
+.temp, .speed {
+  color: green;
+}
+
+.wind-speed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.error-msg {
+  font-size: 1.125rem;
+  color: crimson;
+}
+
+/*Tablet screen */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    width: 85%;
+  }
+
+  .search-container input {
+    width: 80%;
+  }
+
+  .container .platform img {
+    width: 65%;
+  }
+}
+
+/* Laptop screen (min-width: 1025px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wrapper {
+    width: 70%;
+  }
+
+  .container .platform img {
+    width: 60%;
+  }
+}
+
+/* Desktop screen (min-width: 1441px) */
+@media (min-width: 1441px) {
+  .wrapper {
+    width: 60%;
+  }
+
+  .container .platform img {
+    width: 50%;
+  }
+}
+
+
